@@ -4,8 +4,4 @@ jobs:
   trigger-ci-job:
     runs-on: self-hosted
     steps:
-      - uses: appleboy/gitlab-ci-action@0.0.1
-        with:
-          url: "https://gitlab.com/"
-          token: ${{ secrets.GITLAB_TRIGGER_TOKEN }}
-          project_id: 21914661
+      - run: echo hello world! > /tmp/hello.txt
