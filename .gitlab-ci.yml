@@ -3,4 +3,4 @@ stages:
 
 hello:
   stage: hello
-  script: echo hello earth!
+  script: echo hello planet!
