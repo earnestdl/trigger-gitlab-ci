@@ -11,4 +11,3 @@ jobs:
         url: "https://gitlab.com/"
         token: ${{ secrets.GITLAB_TRIGGER_TOKEN }}
         project_id: 21914661
-        ref: 'master'
