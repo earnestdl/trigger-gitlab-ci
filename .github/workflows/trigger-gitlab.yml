@@ -1,13 +1,14 @@
-name: trigger gitlab job
+name: Trigger GitLab Jobs
 on: [push]
 jobs:
 
   build:
-    name: build job trigger
+    runs-on: self-hosted
     steps:
-    - name: Trigger GitLab CI
+    - name: Trigger Master Branch
       uses: appleboy/gitlab-ci-action@0.0.1
       with:
         url: "https://gitlab.com/"
+        ref: master
         token: ${{ secrets.GITLAB_TRIGGER_TOKEN }}
         project_id: 21914661
