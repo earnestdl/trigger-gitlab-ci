@@ -3,7 +3,7 @@ on: [push]
 jobs:
 
   build:
-    name: 
+    name: build job
     steps:
     - name: Trigger GitLab CI
       uses: appleboy/gitlab-ci-action@0.0.1
