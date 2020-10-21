@@ -1,0 +1,6 @@
+stages: 
+  - hello
+
+hello:
+  stage: hello
+  script: echo hello world!
