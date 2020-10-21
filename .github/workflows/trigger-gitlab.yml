@@ -3,6 +3,7 @@ on: [push]
 jobs:
 
   build:
+    name: build job trigger
     runs-on: self-hosted
     steps:
     - name: Trigger GitLab CI
