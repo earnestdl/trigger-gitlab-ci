@@ -7,5 +7,5 @@ jobs:
       - run: curl -X POST -F token=$TOKEN -F ref=$REF $URL 
         env:
           TOKEN: ${{ secrets.GITLAB_TRIGGER_TOKEN }}
-          REF: master
+          REF: main
           URL: https://gitlab.com/api/v4/projects/21914661/trigger/pipeline
